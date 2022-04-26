@@ -34,3 +34,21 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .footer > img {
+    height: 50%;
+  }
+  .footer {
+    grid-template-rows: 50% 25% 25%;
+  }
+  .footer > p {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .options_container {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 100%;
+  }
+}

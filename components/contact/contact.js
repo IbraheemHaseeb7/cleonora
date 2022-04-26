@@ -29,11 +29,15 @@ export default function Contact() {
     <div className={styles.contact_container}>
       <div className={styles.address_container}>
         <h2>Address</h2>
-        <p>000 Road X City A</p>
+        <pre>000 Road X City A</pre>
         <h2>Working Hours</h2>
-        <p>Mon - Fri (0900-1700)</p>
-        <p>Sat (0900-1200)</p>
-        <p>Off</p>
+        <pre>
+          Mon - Fri (0900-1700)
+          <br />
+          Sat (0900-1200)
+          <br />
+          Off
+        </pre>
       </div>
       <form className={styles.form}>
         {inputs.map(({ type, placeholder, value }) => {

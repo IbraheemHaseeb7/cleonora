@@ -1,5 +1,8 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import MenuIcon from "@mui/icons-material/Menu";
+import Sidebar from "./sidebar";
+import { useState } from "react";
 
 const options = [
   { route: "/", text: "Home" },
@@ -9,8 +12,17 @@ const options = [
 ];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className={styles.nav_container}>
+      <button
+        className={styles.burger}
+        type="button"
+        onClick={() => setOpen(!open)}
+      >
+        <MenuIcon />
+      </button>
       <div className={styles.logo_container}>
         <img src="logo.png" alt="logo" />
       </div>
@@ -19,6 +31,10 @@ export default function Navbar() {
           return <Option key={route} route={route} text={text} />;
         })}
       </div>
+      <Sidebar open={open} setOpen={setOpen} />
+      {open && (
+        <div className={styles.blur} onClick={() => setOpen(!open)}></div>
+      )}
     </nav>
   );
 }

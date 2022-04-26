@@ -34,6 +34,8 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.25s ease;
+  border: 2px solid #efcb71;
+  color: #efcb71;
 }
 
 .next_btn:hover,
@@ -43,8 +45,10 @@
 
 .next {
   right: 1rem;
+  top: 50%;
 }
 .back {
   left: 1rem;
+  top: 48%;
   transform: rotateZ(180deg);
 }

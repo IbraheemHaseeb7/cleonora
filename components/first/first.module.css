@@ -54,7 +54,7 @@
 }
 
 .shadow {
-  width: 95%;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.616);
   position: absolute;
@@ -73,4 +73,18 @@
 
 .one_service:hover .one_service_title {
   font-size: 2.1rem;
+}
+
+@media (max-width: 500px) {
+  .home {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  .services_container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 33%);
+  }
+  .one_service {
+    margin: 1rem;
+  }
 }

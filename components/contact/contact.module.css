@@ -45,3 +45,27 @@
   align-self: start;
   color: #efcb71;
 }
+
+@media (max-width: 500px) {
+  .contact_container {
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+  }
+
+  .address_container {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 40%;
+    align-self: start;
+    justify-items: start;
+    height: 12rem;
+  }
+  .address_container > h2,
+  .address_container > pre {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .address_container > pre {
+    font-size: 1rem;
+  }
+}
