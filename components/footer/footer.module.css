@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  grid-template-columns: 50% 50%;
+  height: 15rem;
+  place-items: center;
+  background-color: #efcb71;
+}
+
+.footer > p {
+  color: #343434;
+}
+
+.footer > img {
+  height: 80%;
+}
+
+.footer > a > svg {
+  color: #343434;
+}
+
+.options_container {
+  z-index: 5;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.option {
+  color: #343434;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

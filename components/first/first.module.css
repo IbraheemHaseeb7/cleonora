@@ -1,0 +1,76 @@
+.home {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  display: grid;
+  place-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.images {
+  height: 100%;
+  width: 95%;
+  object-fit: cover;
+}
+
+/* SERVICES */
+
+.services_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  place-items: center;
+  margin: 0 0 3rem 0;
+}
+
+.one_service {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid #efcb71;
+  color: #efcb71;
+}
+
+.one_service > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.one_service_title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 2;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.616);
+  transition: all 0.25s ease;
+}
+
+.shadow {
+  width: 95%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.one_service:hover .shadow {
+  opacity: 0;
+}
+
+.one_service:hover .one_service_title {
+  font-size: 2.1rem;
+}

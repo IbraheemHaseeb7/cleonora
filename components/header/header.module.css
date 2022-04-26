@@ -1,0 +1,19 @@
+.header_container {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #efcb71;
+}
+
+.header {
+  font-size: 3rem;
+  border: 2px solid #efce51;
+  padding: 1rem 2rem;
+}
+
+.header::selection {
+  background-color: #efce51;
+  color: #343434;
+}

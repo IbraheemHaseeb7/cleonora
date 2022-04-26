@@ -1,0 +1,47 @@
+.contact_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  place-items: center;
+}
+
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 4rem 4rem 15rem;
+  place-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 75%;
+  border: 2px solid #efcb71;
+  height: 80%;
+  color: #efcb71;
+}
+
+.textarea {
+  width: 75%;
+  background-color: transparent;
+  height: 100%;
+  border: 2px solid #efcb71;
+  font-size: 1.5rem;
+  padding: 1rem;
+  outline: none;
+  resize: none;
+  color: #efcb71;
+}
+
+.address_container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, 3rem);
+  align-self: start;
+  color: #efcb71;
+}

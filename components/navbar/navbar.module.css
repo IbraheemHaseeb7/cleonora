@@ -1,0 +1,45 @@
+.nav_container {
+  width: 100%;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  background-color: #3434348e;
+}
+
+.options_container {
+  justify-self: end;
+  width: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.option {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #efcb71;
+}
+
+.option:hover {
+  color: #5b5243;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.logo_container > img {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+  margin-top: 1rem;
+}
