@@ -1,8 +1,8 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
-import Sidebar from "./sidebar";
-import { useState } from "react";
+import { useContext } from "react";
+import { NavContext } from "../../pages/_app";
 
 const options = [
   { route: "/", text: "Home" },
@@ -12,7 +12,7 @@ const options = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen } = useContext(NavContext);
 
   return (
     <nav className={styles.nav_container}>
@@ -31,10 +31,6 @@ export default function Navbar() {
           return <Option key={route} route={route} text={text} />;
         })}
       </div>
-      <Sidebar open={open} setOpen={setOpen} />
-      {open && (
-        <div className={styles.blur} onClick={() => setOpen(!open)}></div>
-      )}
     </nav>
   );
 }

@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 2;
 }
 
 .option {
@@ -33,6 +34,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 @media (max-width: 500px) {
