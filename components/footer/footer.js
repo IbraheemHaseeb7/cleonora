@@ -23,7 +23,7 @@ export default function Footer() {
       <p>© 2022 - Copyrights All Rights Reserved</p>
       <div className={styles.options_container}>
         {options.map(({ route, name }) => {
-          return <Option route={route} name={name} />;
+          return <Option route={route} name={name} key={route} />;
         })}
       </div>
     </footer>

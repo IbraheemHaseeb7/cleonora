@@ -16,7 +16,7 @@ export default function Navbar() {
       </div>
       <div className={styles.options_container}>
         {options.map(({ route, text }) => {
-          return <Option route={route} text={text} />;
+          return <Option key={route} route={route} text={text} />;
         })}
       </div>
     </nav>

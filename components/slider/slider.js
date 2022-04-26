@@ -42,7 +42,7 @@ export default function Slider() {
     <section className={styles.main_slider_container}>
       <div ref={div} style={{ transform: `translateX(${move}%)` }}>
         {images.map(({ src, alt }) => {
-          return <Slide src={src} alt={alt} />;
+          return <Slide src={src} alt={alt} key={src} />;
         })}
       </div>
       <button

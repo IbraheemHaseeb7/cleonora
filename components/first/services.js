@@ -5,24 +5,27 @@ const services = [
     src: "https://images.unsplash.com/photo-1650871403423-020bc41ddc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     alt: "first_service",
     title: "Lip Fillers",
+    id: 1,
   },
   {
     src: "https://images.unsplash.com/photo-1650871403423-020bc41ddc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     alt: "first_service",
     title: "Hyperhidrosis Treatment Using Botox",
+    id: 2,
   },
   {
     src: "https://images.unsplash.com/photo-1650871403423-020bc41ddc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     alt: "first_service",
     title: "Facial Contouring",
+    id: 3,
   },
 ];
 
 export default function Services() {
   return (
     <div className={styles.services_container}>
-      {services.map(({ src, title, alt }) => {
-        return <OneService title={title} src={src} alt={alt} />;
+      {services.map(({ src, title, alt, id }) => {
+        return <OneService key={id} title={title} src={src} alt={alt} />;
       })}
     </div>
   );

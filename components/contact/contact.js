@@ -39,6 +39,7 @@ export default function Contact() {
         {inputs.map(({ type, placeholder, value }) => {
           return (
             <input
+              key={placeholder}
               type={type}
               placeholder={placeholder}
               value={value}
