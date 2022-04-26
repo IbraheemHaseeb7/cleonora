@@ -5,7 +5,8 @@
   grid-template-columns: 30% 70%;
   justify-content: start;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 2;
   background-color: #3434348e;
 }
