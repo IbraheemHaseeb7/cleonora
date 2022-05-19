@@ -2,19 +2,19 @@ import styles from "./first.module.css";
 
 const services = [
   {
-    src: "https://images.unsplash.com/photo-1650871403423-020bc41ddc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    src: "8.jpeg",
     alt: "first_service",
     title: "Lip Fillers",
     id: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1650871403423-020bc41ddc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    src: "9.jpg",
     alt: "first_service",
     title: "Hyperhidrosis Treatment Using Botox",
     id: 2,
   },
   {
-    src: "https://images.unsplash.com/photo-1650871403423-020bc41ddc2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    src: "7.jpg",
     alt: "first_service",
     title: "Facial Contouring",
     id: 3,

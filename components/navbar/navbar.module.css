@@ -7,8 +7,8 @@
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 2;
-  background-color: #3434348e;
+  z-index: 10;
+  background-color: #343434;
 }
 
 .options_container {

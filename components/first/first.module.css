@@ -13,6 +13,31 @@
   object-fit: cover;
 }
 
+.logo_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid #efcb71;
+  background-color: white;
+  margin: 1rem 0;
+}
+
+.logo_container > h1 {
+  color: #343434;
+  font-size: 6rem;
+  margin: -2rem 1rem 0 0;
+}
+
+.logo {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.logo_main {
+  margin: 3rem 2rem 0 0;
+}
+
 /* SERVICES */
 
 .services_container {
@@ -46,11 +71,12 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 100;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   pointer-events: none;
   z-index: 2;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.616);
+  text-shadow: 0 0px 10px rgb(0, 0, 0);
   transition: all 0.25s ease;
+  font-family: "Dancing Script", cursive;
 }
 
 .shadow {
