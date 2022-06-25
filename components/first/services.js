@@ -2,13 +2,13 @@ import styles from "./first.module.css";
 
 const services = [
   {
-    src: "8.jpeg",
+    src: "8.jpg",
     alt: "first_service",
     title: "Lip Fillers",
     id: 1,
   },
   {
-    src: "9.jpg",
+    src: "9.jpeg",
     alt: "first_service",
     title: "Hyperhidrosis Treatment Using Botox",
     id: 2,

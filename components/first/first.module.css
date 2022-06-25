@@ -50,17 +50,20 @@
 
 .one_service {
   width: 95%;
+  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   border: 2px solid #efcb71;
   color: #efcb71;
+  overflow: hidden;
 }
 
 .one_service > img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .one_service_title {
