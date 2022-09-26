@@ -20,7 +20,9 @@ export default function About() {
       <AboutUs />
       <div className={styles.boxes_container}>
         {data.map(({ text, src, id, content }) => {
-          return <Boxes text={text} id={id} src={src} content={content} />;
+          return (
+            <Boxes text={text} key={id} id={id} src={src} content={content} />
+          );
         })}
       </div>
     </div>
