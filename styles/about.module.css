@@ -1,0 +1,17 @@
+.boxes_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(100vh - 20rem);
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .boxes_container {
+    margin: 1rem 0;
+    flex-direction: column;
+    gap: 2rem;
+    height: 150vh;
+  }
+}

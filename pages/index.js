@@ -1,11 +1,9 @@
-import First from "../components/first/first";
-import Slider from "../components/slider/slider";
+import HomeGreeting from "../components/homeGreeting/homeGreeting";
 
 export default function Home() {
   return (
     <div>
-      <Slider />
-      <First />
+      <HomeGreeting />
     </div>
   );
 }

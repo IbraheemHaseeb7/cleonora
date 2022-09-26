@@ -1,0 +1,16 @@
+.main_container {
+  height: 100%;
+}
+
+.main_container > img {
+  height: 100%;
+  width: 15rem;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .main_container > img {
+    height: 10rem;
+    object-fit: cover;
+  }
+}

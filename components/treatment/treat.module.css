@@ -1,0 +1,22 @@
+.main_container {
+  width: 100%;
+  margin-top: 13rem;
+}
+
+.title_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  height: 15rem;
+  width: 15rem;
+}
+
+.picture > img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}

@@ -14,11 +14,15 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <NavContext.Provider value={{ open: open, setOpen: setOpen }}>
+      <link
+        href="https://fonts.google.com/css?family=Allura"
+        rel="stylesheet"
+      ></link>
       <Navbar />
       <Sidebar open={open} setOpen={setOpen} />
       {open && <div className="blur" onClick={() => setOpen(!open)}></div>}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
     </NavContext.Provider>
   );
 }

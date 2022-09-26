@@ -1,0 +1,34 @@
+.main_container {
+  width: 100%;
+  margin-top: 13rem;
+  color: #e6b12b;
+  font-family: "Allura";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 13rem);
+}
+
+.main_container > img {
+  margin-bottom: 5rem;
+}
+
+.images_container {
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .main_container > img {
+    width: 80%;
+  }
+
+  .images_container {
+    flex-direction: column;
+    height: 100vh;
+  }
+}

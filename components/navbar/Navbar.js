@@ -6,8 +6,9 @@ import { NavContext } from "../../pages/_app";
 
 const options = [
   { route: "/", text: "Home" },
-  { route: "/aboutus", text: "About Us" },
+  { route: "/treatments", text: "treatments" },
   { route: "/courses", text: "Courses" },
+  { route: "/aboutus", text: "About Us" },
   { route: "/contactus", text: "Contact Us" },
 ];
 

@@ -1,0 +1,45 @@
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left_container > img {
+  width: 60%;
+  object-fit: contain;
+}
+
+.center_container {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.center_container > img {
+  width: 100%;
+}
+
+.appoint {
+  width: 80% !important;
+}
+
+.right_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_container > img {
+  width: 80%;
+}

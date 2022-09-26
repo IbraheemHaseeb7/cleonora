@@ -17,19 +17,24 @@ export default function Sidebar({ open, setOpen }) {
             Home
           </button>
         </Link>
-        <Link href="/">
+        <Link href="/treatments">
           <button className={styles.sidebar_options} type="button">
-            Contact Us
+            Treatments
           </button>
         </Link>
-        <Link href="/">
+        <Link href="/courses">
+          <button className={styles.sidebar_options} type="button">
+            Courses
+          </button>
+        </Link>
+        <Link href="/aboutus">
           <button className={styles.sidebar_options} type="button">
             About Us
           </button>
         </Link>
-        <Link href="/">
+        <Link href="/contactus">
           <button className={styles.sidebar_options} type="button">
-            Courses
+            Contact Us
           </button>
         </Link>
       </div>
