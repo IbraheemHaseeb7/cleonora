@@ -20,3 +20,12 @@
   width: 15rem;
   object-fit: cover;
 }
+
+@media (max-width: 600px) {
+  .picture {
+    width: 90%;
+  }
+  .picture > img {
+    width: 100%;
+  }
+}

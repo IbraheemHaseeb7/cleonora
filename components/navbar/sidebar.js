@@ -13,27 +13,47 @@ export default function Sidebar({ open, setOpen }) {
     >
       <div className={styles.sidebar_options_container}>
         <Link href="/">
-          <button className={styles.sidebar_options} type="button">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
             Home
           </button>
         </Link>
         <Link href="/treatments">
-          <button className={styles.sidebar_options} type="button">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
             Treatments
           </button>
         </Link>
         <Link href="/courses">
-          <button className={styles.sidebar_options} type="button">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
             Courses
           </button>
         </Link>
         <Link href="/aboutus">
-          <button className={styles.sidebar_options} type="button">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
             About Us
           </button>
         </Link>
         <Link href="/contactus">
-          <button className={styles.sidebar_options} type="button">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
             Contact Us
           </button>
         </Link>
