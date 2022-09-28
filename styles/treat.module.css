@@ -5,10 +5,3 @@
   align-items: center;
   margin: 1rem 0;
 }
-
-@media (max-width: 600px) {
-  .pictures_container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}

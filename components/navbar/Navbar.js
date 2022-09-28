@@ -25,9 +25,7 @@ export default function Navbar() {
         <MenuIcon />
       </button>
       <div className={styles.logo_container}>
-        <Link href="/">
-          <img style={{ cursor: "pointer" }} src="logo.png" alt="logo" />
-        </Link>
+        <img src="logo.png" alt="logo" />
       </div>
       <div className={styles.options_container}>
         {options.map(({ route, text }) => {

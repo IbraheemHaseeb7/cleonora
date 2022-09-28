@@ -59,11 +59,3 @@
 .right_container > a > img {
   width: 80%;
 }
-
-@media (max-width: 600px) {
-  .main_container {
-    flex-direction: column-reverse;
-    gap: 4rem;
-    margin-top: 5rem;
-  }
-}
