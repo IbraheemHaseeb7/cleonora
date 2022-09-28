@@ -9,7 +9,7 @@ const data = [
     src: "",
     id: 2,
     content:
-      "Welcome Queen!\n\nThank you for choosing CleoNora\n London.\n\nA 35% deposit is required to \nsecure all appointments.\n\nReschedule or Cancel within \n48 hours.\n\nThank You! See you soon!\nHave an amazing day.",
+      "CleoNora London Ltd trading under CleoNora London offers a range of beauty and non-surgical cosmetic treatments. \n\nWe take immense pride in offering affordable beauty and non surgical treatments to our clients. We are fully insured, highly qualified and extensively experienced!\n\n We are based in East London, UK",
   },
   { text: false, src: "about2.png", id: 3, content: "" },
 ];

@@ -41,6 +41,8 @@
   font-size: 1.25rem;
   text-align: center;
   font-family: "Roboto";
+  line-break: strict;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 600px) {

@@ -30,6 +30,14 @@
   width: 100%;
 }
 
+.center_container > pre {
+  color: #efcb71;
+  white-space: pre-wrap;
+  margin: 0;
+  margin-top: 1.5rem;
+  font-family: "Roboto";
+}
+
 .appoint {
   width: 80% !important;
 }
@@ -40,7 +48,15 @@
   align-items: center;
 }
 
-.right_container > img {
+.right_container > a {
+  transition: all 0.15s ease;
+}
+
+.right_container > a:hover {
+  transform: scale(0.98);
+}
+
+.right_container > a > img {
   width: 80%;
 }
 
