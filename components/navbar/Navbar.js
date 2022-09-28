@@ -10,6 +10,7 @@ const options = [
   { route: "/courses", text: "Courses" },
   { route: "/aboutus", text: "About Us" },
   { route: "/contactus", text: "Contact Us" },
+  { route: "/gallery", text: "Gallery" },
 ];
 
 export default function Navbar() {

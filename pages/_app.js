@@ -3,6 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import Sidebar from "../components/navbar/sidebar";
 import React, { useState } from "react";
 import "../styles/globals.css";
+import Whatsapp from "../components/whatsapp/whatsapp";
 
 export const NavContext = React.createContext({
   open: false,
@@ -14,14 +15,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <NavContext.Provider value={{ open: open, setOpen: setOpen }}>
-      <link
-        href="https://fonts.google.com/css?family=Allura"
-        rel="stylesheet"
-      ></link>
       <Navbar />
       <Sidebar open={open} setOpen={setOpen} />
       {open && <div className="blur" onClick={() => setOpen(!open)}></div>}
       <Component {...pageProps} />
+      <Whatsapp />
       {/* <Footer /> */}
     </NavContext.Provider>
   );

@@ -1,17 +1,37 @@
 .contact_container {
   width: 100%;
   display: grid;
+  grid-template-rows: 10% 90%;
   grid-template-columns: 30% 70%;
   place-items: center;
+  margin: 0;
+}
+
+.title_container {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  color: #efcb71;
+  font-family: "Allura";
+}
+
+.title_container > h1 {
+  font-size: 5rem;
 }
 
 .form {
   width: 100%;
   display: grid;
-  grid-template-rows: 4rem 4rem 15rem;
+  grid-template-rows: 4rem 4rem 4rem 15rem 4rem;
   place-items: center;
   gap: 1rem;
-  margin-bottom: 3rem;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 
 .input {
@@ -42,23 +62,50 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(5, 3rem);
-  align-self: start;
   color: #efcb71;
+  align-self: start;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 
-@media (max-width: 500px) {
+.address_container > p {
+  margin: 3rem 0;
+  font-size: 2rem;
+  padding: 0;
+  font-family: "Allura";
+}
+
+@media (max-width: 600px) {
   .contact_container {
+    height: 160vh;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 10% 40% 50%;
+    overflow: hidden;
   }
 
+  .title_container {
+    overflow: hidden;
+  }
+
+  .title_container > h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    justify-self: center;
+  }
   .address_container {
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 40%;
+    grid-template-rows: 13.3% 13.3% 13.3% 20% 40%;
     align-self: start;
     justify-items: start;
-    height: 12rem;
+    height: 25rem;
   }
+
+  .address_container > p {
+    margin: 1rem 0;
+  }
+
   .address_container > h2,
   .address_container > pre {
     margin: 0;
@@ -67,5 +114,9 @@
 
   .address_container > pre {
     font-size: 1rem;
+  }
+  .form {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 }

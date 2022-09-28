@@ -1,0 +1,38 @@
+.main_container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.main_container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #efcb71;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.main_container > button > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main_container > button > a > svg {
+  pointer-events: none;
+  color: #343434;
+  font-size: 2rem;
+}
+
+.main_container > button:hover {
+  transform: scale(0.93);
+}

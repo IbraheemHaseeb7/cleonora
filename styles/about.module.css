@@ -1,3 +1,7 @@
+.main_container {
+  margin-top: 15rem;
+}
+
 .boxes_container {
   width: 100%;
   display: flex;

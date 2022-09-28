@@ -1,6 +1,8 @@
 import { useReducer } from "react";
 import styles from "./contact.module.css";
 import { reducer } from "./reducer.js";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 
 const initialState = {};
 
@@ -9,6 +11,7 @@ export default function Contact() {
 
   const inputs = [
     { type: "name", placeholder: "Name", value: state.name },
+    { type: "number", placeholder: "Phone Number", value: state.phoneNumber },
     { type: "email", placeholder: "Email", value: state.email },
   ];
 
@@ -27,17 +30,28 @@ export default function Contact() {
 
   return (
     <div className={styles.contact_container}>
+      <div className={styles.title_container}>
+        <h1>Contact Us</h1>
+      </div>
       <div className={styles.address_container}>
-        <h2>Address</h2>
+        <h2>
+          Address <LocationOnIcon />
+        </h2>
         <pre>000 Road X City A</pre>
-        <h2>Working Hours</h2>
+        <h2>
+          Working Hours <AccessTimeFilledIcon />
+        </h2>
         <pre>
           Mon - Fri (0900-1700)
           <br />
           Sat (0900-1200)
           <br />
-          Off
+          Sun Off
         </pre>
+        <p>
+          We look forward to
+          <br /> hearing from you Queen!
+        </p>
       </div>
       <form className={styles.form}>
         {inputs.map(({ type, placeholder, value }) => {
