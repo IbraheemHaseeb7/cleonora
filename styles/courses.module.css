@@ -1,0 +1,8 @@
+.main_container {
+  margin-top: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}

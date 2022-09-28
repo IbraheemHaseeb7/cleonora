@@ -31,7 +31,7 @@ export default function Contact() {
   return (
     <div className={styles.contact_container}>
       <div className={styles.title_container}>
-        <h1>Contact Us</h1>
+        <img src="contactus.png" alt="no image here" />
       </div>
       <div className={styles.address_container}>
         <h2>
