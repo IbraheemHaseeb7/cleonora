@@ -20,7 +20,12 @@ export default function Bottom() {
         </pre>
       </div>
       <div className={styles.right_container}>
-        <img src="qrcode.png" alt="no image here" />
+        <a
+          href="https://booking.setmore.com/scheduleappointment/02ea650f27b881b9ac1a83e27b6bb8bd840d9861?source=qrcode"
+          target="_blank"
+        >
+          <img src="qrcode.png" alt="no image here" />
+        </a>
       </div>
     </div>
   );
