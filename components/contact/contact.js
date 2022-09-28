@@ -9,6 +9,7 @@ export default function Contact() {
 
   const inputs = [
     { type: "name", placeholder: "Name", value: state.name },
+    { type: "number", placeholder: "Phone Number", value: state.phoneNumber },
     { type: "email", placeholder: "Email", value: state.email },
   ];
 
@@ -38,6 +39,7 @@ export default function Contact() {
           <br />
           Off
         </pre>
+        <p>Welcome queen</p>
       </div>
       <form className={styles.form}>
         {inputs.map(({ type, placeholder, value }) => {

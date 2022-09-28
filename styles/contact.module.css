@@ -1,0 +1,12 @@
+.main_container {
+  width: 100%;
+  margin-top: 13rem;
+}
+
+.main_container > h1 {
+  width: 100%;
+  text-align: center;
+  color: #efcb71;
+  font-size: 5rem;
+  font-family: "Allura";
+}
