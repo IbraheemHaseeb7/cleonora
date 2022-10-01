@@ -25,7 +25,7 @@ export default function Courses() {
           <li>specialist beauty treatments and/ or any other procedure</li>
         </ul>
         <br />
-        All procedures will be supervised by our company's Aesthetic
+        All procedures will be supervised by our company&#39;s Aesthetic
         Practitioner CEO and Owner.
         <br /> <br />
         Please follow us on Instagram{" "}
