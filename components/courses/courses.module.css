@@ -102,3 +102,14 @@
 .submit_button:active::before {
   top: 0;
 }
+
+@media (max-width: 600px) {
+  .main_container {
+    width: 90%;
+  }
+
+  .checkbox_container {
+    grid-template-columns: 100%;
+    margin: 1rem 0;
+  }
+}
