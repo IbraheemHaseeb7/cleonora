@@ -27,3 +27,9 @@
   grid-auto-rows: 70vh;
   place-items: center;
 }
+
+@media (max-width: 600px) {
+  .videos_container {
+    grid-template-columns: 100%;
+  }
+}

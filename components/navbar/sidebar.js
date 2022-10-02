@@ -57,6 +57,15 @@ export default function Sidebar({ open, setOpen }) {
             Contact Us
           </button>
         </Link>
+        <Link href="/gallery">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
+            Gallery
+          </button>
+        </Link>
       </div>
       <button className={styles.close} onClick={close}>
         X

@@ -7,14 +7,24 @@ export default function Video({ src }) {
   const [video, setVideo] = useState();
   const [play, setPlay] = useState(false);
   const [opacity, setOpacity] = useState(0);
+  const [mute, setMute] = useState(false);
+  const vid = useRef();
 
   function playVideo(e) {
     if (play) {
-      e.target.pause();
+      vid.current.pause();
       setPlay(!play);
     } else {
-      e.target.play();
+      vid.current.play();
       setPlay(!play);
+    }
+  }
+
+  function mutVideo() {
+    if (vid.current.muted) {
+      vid.current.muted = false;
+    } else {
+      vid.current.muted = true;
     }
   }
 
@@ -28,17 +38,29 @@ export default function Video({ src }) {
       >
         {!play ? <PlayArrowIcon /> : <PauseIcon />}
       </button>
-      <button
+      {/* <button
         type="button"
         className={styles.mute}
         style={{ opacity: opacity }}
-      >
-        mute
-      </button>
-      <video
+        onClick={() => {
+          setMute(!mute);
+          mutVideo();
+        }}
         onMouseEnter={() => {
           setOpacity(0.7);
         }}
+        onMouseLeave={() => {
+          setOpacity(0);
+        }}
+      >
+        mute
+      </button> */}
+      <video
+        ref={vid}
+        onMouseEnter={() => {
+          setOpacity(0.7);
+        }}
+        style={play ? { objectFit: "contain" } : { objectFit: "cover" }}
         onMouseLeave={() => {
           setOpacity(0);
         }}

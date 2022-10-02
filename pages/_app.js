@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import "../styles/globals.css";
 import Whatsapp from "../components/whatsapp/whatsapp";
 import Toaster from "react-hot-toast";
+import Navigation from "../components/navigation/navigation";
 
 export const NavContext = React.createContext({
   open: false,
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       {open && <div className="blur" onClick={() => setOpen(!open)}></div>}
       <Component {...pageProps} />
       <Whatsapp />
+      <Navigation />
       {/* <Toaster /> */}
       {/* <Footer /> */}
     </NavContext.Provider>
