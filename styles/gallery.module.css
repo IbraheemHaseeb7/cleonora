@@ -1,0 +1,29 @@
+.main_container {
+  width: 100%;
+  margin-top: 15rem;
+  color: #efcb71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_container > h1 {
+  margin-top: 0;
+  font-size: 5rem;
+  font-family: "Allura";
+}
+
+.videos_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 70vh;
+  place-items: center;
+}
