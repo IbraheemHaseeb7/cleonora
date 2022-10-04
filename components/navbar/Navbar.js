@@ -8,6 +8,7 @@ const options = [
   { route: "/", text: "Home" },
   { route: "/treatments", text: "treatments" },
   { route: "/courses", text: "Courses" },
+  { route: "/glow", text: "Glow Up" },
   { route: "/aboutus", text: "About Us" },
   { route: "/contactus", text: "Contact Us" },
   { route: "/gallery", text: "Gallery" },

@@ -1,0 +1,55 @@
+.main_container {
+  margin-top: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  color: #efcb71;
+}
+
+.title_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.title_container > h1 {
+  font-size: 5rem;
+  font-family: "Allura";
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.text_container {
+  width: 90%;
+}
+
+.question_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.question_container > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.question_container > div > h1 {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 600px) {
+  .title_container > h1 {
+    font-size: 3.5rem;
+  }
+}

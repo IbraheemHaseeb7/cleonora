@@ -12,6 +12,7 @@ export function reducer(state, action) {
         email: "",
         name: "",
         textarea: "",
+        phoneNumber: "",
       };
   }
 }

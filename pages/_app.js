@@ -17,13 +17,13 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <NavContext.Provider value={{ open: open, setOpen: setOpen }}>
+      {/* <Toaster /> */}
       <Navbar />
       <Sidebar open={open} setOpen={setOpen} />
       {open && <div className="blur" onClick={() => setOpen(!open)}></div>}
       <Component {...pageProps} />
       <Whatsapp />
       <Navigation />
-      {/* <Toaster /> */}
       {/* <Footer /> */}
     </NavContext.Provider>
   );

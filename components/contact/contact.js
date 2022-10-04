@@ -3,6 +3,7 @@ import styles from "./contact.module.css";
 import { reducer } from "./reducer.js";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
+// import toast from "react-hot-toast";
 
 const initialState = {};
 
@@ -11,7 +12,11 @@ export default function Contact() {
 
   const inputs = [
     { type: "name", placeholder: "Name", value: state.name },
-    { type: "number", placeholder: "Phone Number", value: state.phoneNumber },
+    {
+      type: "phoneNumber",
+      placeholder: "Phone Number",
+      value: state.phoneNumber,
+    },
     { type: "email", placeholder: "Email", value: state.email },
   ];
 
@@ -25,7 +30,30 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    dispatch({ type: "submit" });
+    if ((state.email || state.phoneNumber) && state.name && state.textarea) {
+      sendEmail();
+      dispatch({ type: "submit" });
+    } else {
+      // console.log("ahsdkjf");
+      // toast.error("Please fill out all the fields");
+    }
+  }
+
+  async function sendEmail() {
+    const final = {
+      email: state.email,
+      name: state.name,
+      phoneNumber: state.phoneNumber,
+      message: state.textarea,
+      type: "contact",
+    };
+
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(final),
+    }).then(() => {
+      // toast.success("Message Sent Successfully!");
+    });
   }
 
   return (
@@ -39,15 +67,9 @@ export default function Contact() {
         </h2>
         <pre>000 Road X City A</pre>
         <h2>
-          Working Hours <AccessTimeFilledIcon />
+          Appointment <AccessTimeFilledIcon />
         </h2>
-        <pre>
-          Mon - Fri (0900-1700)
-          <br />
-          Sat (0900-1200)
-          <br />
-          Sun Off
-        </pre>
+        <pre>Tuesday - Saturday</pre>
         <p>
           We look forward to
           <br /> hearing from you Queen!

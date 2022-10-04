@@ -33,3 +33,5 @@ yarn-error.log*
 
 # photoshop files
 *.psd
+
+.env

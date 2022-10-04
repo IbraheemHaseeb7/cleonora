@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+// import toast from "react-hot-toast";
 import styles from "./courses.module.css";
 import { reducer } from "./reducer";
 
@@ -72,7 +73,28 @@ export default function Course() {
       state.treatments.length > 0
     ) {
       dispatch({ type: "submit" });
+    } else {
+      // toast.error("Please fill all fields and choose at least one treatment");
     }
+
+    sendEmail();
+  }
+
+  async function sendEmail() {
+    const final = {
+      email: state.input.email,
+      name: state.input.name,
+      phoneNumber: state.input.phoneNumber,
+      treatments: state.treatments,
+      type: "glow",
+    };
+
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(final),
+    }).then(() => {
+      // toast.success("Application Sent Successfully");
+    });
   }
 
   return (

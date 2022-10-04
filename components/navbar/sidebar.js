@@ -39,6 +39,15 @@ export default function Sidebar({ open, setOpen }) {
             Courses
           </button>
         </Link>
+        <Link href="/glow">
+          <button
+            className={styles.sidebar_options}
+            type="button"
+            onClick={() => close()}
+          >
+            Glow Up Squad
+          </button>
+        </Link>
         <Link href="/aboutus">
           <button
             className={styles.sidebar_options}
