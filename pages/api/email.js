@@ -2,6 +2,10 @@
 
 export default async function handler(req, res) {
   const sgMail = require("@sendgrid/mail");
+  const dotenv = require("dotenv");
+
+  dotenv.config();
+
   const body = JSON.parse(req.body);
   sgMail.setApiKey(process.env.API_KEY);
 
