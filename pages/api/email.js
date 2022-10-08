@@ -9,8 +9,6 @@ export default async function handler(req, res) {
   const body = JSON.parse(req.body);
   sgMail.setApiKey(process.env.API_KEY);
 
-  console.log(process.env.API_KEY);
-
   let msg;
 
   if (body.type === "glow") {
@@ -48,7 +46,7 @@ export default async function handler(req, res) {
     };
   }
 
-  sgMail
+  await sgMail
     .send(msg)
     .then(() => {
       console.log("Email sent");
