@@ -65,7 +65,7 @@ export default function Contact() {
         <h2>
           Address <LocationOnIcon />
         </h2>
-        <pre>000 Road X City A</pre>
+        <pre>East London</pre>
         <h2>
           Appointment <AccessTimeFilledIcon />
         </h2>

@@ -10,9 +10,37 @@
   margin: 1rem 0;
 }
 
+.more_container {
+  color: #efcb71;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.more_container > ul {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 4rem;
+}
+
+.more_container > ul > li {
+  margin-left: 5rem;
+}
+
 @media (max-width: 600px) {
   .pictures_container {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .more_container > ul > li {
+    margin: 0;
+  }
+  .more_container > ul {
+    grid-template-columns: 100%;
+    margin-bottom: 4rem;
   }
 }
