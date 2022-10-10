@@ -66,7 +66,7 @@ export default function Treatments() {
         <h1>More Treatments</h1>
         <ul>
           {treatments.map((data) => {
-            return <li>{data}</li>;
+            return <li key={data}>{data}</li>;
           })}
         </ul>
       </div>
