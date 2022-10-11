@@ -63,7 +63,6 @@ export default function Treatments() {
         })}
       </div>
       <div className={styles.more_container}>
-        <h1>More Treatments</h1>
         <ul>
           {treatments.map((data) => {
             return <li key={data}>{data}</li>;
