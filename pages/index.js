@@ -22,21 +22,21 @@ const data = [
 
 const pictures = [
   {
-    src: "lipinject.png",
+    src: "new/4.jpeg",
     id: 1,
     name: "Lip Filler",
     description:
       "If you need to make your lips more hot and appealing then here we're imparting you with the high-quality lip filler offerings. It is the most well-known kind of dermal filler. We can use an injection to increase the extent of your lips and lead them to look more lovely. It consists of hyaluronic acid (HA). It's a natural substance within the human body. Through this service, your lips will look larger.",
   },
   {
-    src: "9.jpeg",
+    src: "new/5.jpg",
     id: 2,
     name: "Botox",
     description:
       "Botox is related to the cosmetic wrinkle reducer. It is one of the powerful strategies for the remedy of focal hyperhidrosis. The injection of Botox adds botulinum toxin which is used to block the nerve signals which can be responsible for the technique of sweating. It lesser the manufacturing of sweat via the sweat glands. For the effective treatment of focal hyperhidrosis botulinum toxin type, A is used.",
   },
   {
-    src: "eyeinject.png",
+    src: "new/6.jpeg",
     id: 3,
     name: "Facial Contouring",
     description:

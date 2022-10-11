@@ -77,7 +77,7 @@
 
 @media (max-width: 600px) {
   .contact_container {
-    height: 160vh;
+    height: 120vh;
     grid-template-columns: 100%;
     grid-template-rows: 10% 40% 50%;
     overflow: hidden;

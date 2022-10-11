@@ -69,6 +69,12 @@
     gap: 4rem;
     margin-top: 0;
   }
+
+  .center_container > .center_logo {
+    margin-top: 1rem;
+    align-self: center;
+    width: 70%;
+  }
   .right_container {
     width: 100%;
     height: 14rem;

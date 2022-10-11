@@ -4,7 +4,7 @@ export default function Bottom() {
   return (
     <div className={styles.main_container}>
       <div className={styles.left_container}>
-        <img src="left.png" alt="no image here" />
+        <img src="left2.png" alt="no image here" />
       </div>
       <div className={styles.center_container}>
         <img src="Book Your.png" alt="no image here" />
@@ -18,6 +18,11 @@ export default function Bottom() {
           is required to secure all appointments. Reschedule or Cancel within 48
           hours. Thank You! See you soon! Have an amazing day.
         </pre>
+        <img
+          className={styles.center_logo}
+          src="new/logo.png"
+          alt="no image here"
+        />
       </div>
       <div className={styles.right_container}>
         <a

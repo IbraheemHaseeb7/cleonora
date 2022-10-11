@@ -3,9 +3,9 @@ import styles from "./greeting.module.css";
 
 export default function HomeGreeting() {
   const pictures = [
-    { src: "5.jpg", id: 1 },
-    { src: "6.jpg", id: 2 },
-    { src: "2.jpg", id: 3 },
+    { src: "new/1.jpeg", id: 1 },
+    { src: "new/2.jpeg", id: 2 },
+    { src: "new/3.jpeg", id: 3 },
   ];
   return (
     <div className={styles.main_container}>

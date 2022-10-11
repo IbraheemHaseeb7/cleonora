@@ -69,7 +69,12 @@ export default function Contact() {
         <h2>
           Appointment <AccessTimeFilledIcon />
         </h2>
-        <pre>Tuesday - Saturday</pre>
+        <pre>
+          By appointment
+          <br />
+          <br />
+          Tuesday - Saturday
+        </pre>
         <p>
           We look forward to
           <br /> hearing from you Queen!
