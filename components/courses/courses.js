@@ -100,7 +100,7 @@ export default function Course() {
   return (
     <form className={styles.main_container}>
       <div className={styles.title_container}>
-        <h1>Register Courses</h1>
+        <h1>Apply Here</h1>
       </div>
       <div className={styles.input_container}>
         {inputs.map(({ type, name, value, id, placeholder }) => {

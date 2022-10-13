@@ -30,7 +30,7 @@ const pictures = [
 const treatments = [
   "Luxury Facials",
 
-  "Fast Dissolving ",
+  "Fat Dissolving ",
 
   "Dermal Fillers ",
 
