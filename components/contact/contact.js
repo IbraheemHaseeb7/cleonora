@@ -67,13 +67,10 @@ export default function Contact() {
         </h2>
         <pre>East London</pre>
         <h2>
-          Schedule <AccessTimeFilledIcon />
+          Booking <AccessTimeFilledIcon />
         </h2>
         <pre>
           By appointment only
-          <br />
-          <br />
-          Tuesday - Saturday
         </pre>
         <p>
           We look forward to
