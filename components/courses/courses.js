@@ -30,7 +30,7 @@ export default function Course() {
   ];
   const checks = [
     { name: "Luxury Facials", value: state?.treatments?.luxfac, id: 1 },
-    { name: "Fast Dissolving", value: state?.treatments?.fastdis, id: 2 },
+    { name: "Fat Dissolving", value: state?.treatments?.fastdis, id: 2 },
     { name: "Dermal Fillers", value: state?.treatments?.dermfil, id: 3 },
     {
       name: "Anti Wrinkle Injections",
