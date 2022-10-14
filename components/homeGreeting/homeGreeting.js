@@ -9,7 +9,7 @@ export default function HomeGreeting() {
   ];
   return (
     <div className={styles.main_container}>
-      <img src="welcomequeen.png" alt="no image here" />
+      <img src="welcome.png" alt="no image here" />
       <div className={styles.images_container}>
         {pictures.map(({ src, id }) => {
           return <HomePictures src={src} key={id} />;

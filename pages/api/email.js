@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
     str += `</ol>`;
     msg = {
-      to: "cleonorasalon@gmail.com",
+        to: "cleonoralondon@gmail.com",
       from: "cleonorasalon@gmail.com",
       subject: "Application - Glow Up Squad - CleoNora Website",
       text: `Application Sent From: ${body.name}\nContact Information: \n\t- EMAIL: ${body.email}\n\t- PHONE NUMBER: ${body.phoneNumber}`,
@@ -36,7 +36,7 @@ export default async function handler(req, res) {
     };
   } else {
     msg = {
-      to: "cleonorasalon@gmail.com",
+      to: "cleonoralondon@gmail.com",
       from: "cleonorasalon@gmail.com",
       subject: "Contact - CleoNora Website",
       text: `Name: ${body.name}\nEmail: ${body.email}\nPhone Number: ${body.phoneNumber}\nMessage: \n${body.message}`,
