@@ -6,6 +6,7 @@ import CallIcon from "@mui/icons-material/Call";
 import InfoIcon from "@mui/icons-material/Info";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import Link from "next/link";
+import PaymentIcon from "@mui/icons-material/Payment";
 import { useRouter } from "next/router";
 
 const navs = [
@@ -47,6 +48,20 @@ export default function Navigation() {
         {navs.map(({ title, route, icon, id }) => {
           return <Nav route={route} icon={icon} key={id} title={title} />;
         })}
+        <div className={styles.nav_container}>
+          <div>
+            <a
+              href="https://payl8r.com/retailers/payment-detail?retailer=cleonoral9282ykfxuv9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <PaymentIcon />
+              </div>
+              <p>Pay Here</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
