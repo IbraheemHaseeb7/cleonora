@@ -35,6 +35,14 @@ export default function Navbar() {
         {options.map(({ route, text }) => {
           return <Option key={route} route={route} text={text} />;
         })}
+        <a
+          href="https://payl8r.com/retailers/payment-detail?retailer=cleonoral9282ykfxuv9"
+          target="_blank"
+        >
+          <button type="btn" className={styles.option}>
+            PAYL8R
+          </button>
+        </a>
       </div>
     </nav>
   );

@@ -98,7 +98,7 @@ export default function Navigation() {
                 <div>
                   <PaymentIcon />
                 </div>
-                <p>Pay Here</p>
+                <p>Payl8r</p>
               </a>
             </div>
           </div>
