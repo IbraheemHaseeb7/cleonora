@@ -1,3 +1,46 @@
+.large_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypal_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paypal_container > label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #efcb71;
+  flex-direction: column;
+  width: 30%;
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.amount {
+  background-color: transparent;
+  margin-left: -0.5rem;
+  border: 2px solid #efcb71;
+  color: #efcb71;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  outline: none;
+  width: 100%;
+  position: relative;
+}
+
+.paypal_container > div {
+  width: 50%;
+}
+
 .main_container {
   width: 100%;
   height: 5rem;

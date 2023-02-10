@@ -8,6 +8,10 @@ import CollectionsIcon from "@mui/icons-material/Collections";
 import Link from "next/link";
 import PaymentIcon from "@mui/icons-material/Payment";
 import { useRouter } from "next/router";
+import { useEffect, useRef, useState } from "react";
+import { loadScript } from "@paypal/paypal-js";
+import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
+import PayPalButton from "react-paypal-smart-button";
 
 const navs = [
   { route: "/", icon: <HomeIcon />, id: 1, title: "Home" },
@@ -42,26 +46,77 @@ const navs = [
 ];
 
 export default function Navigation() {
+  const [input, setInput] = useState({ amount: 0.1, button: null });
+  const paypal = useRef();
+
+  function handleChange(e) {
+    if (e.target.name === "amount") {
+      if (e.target.value < 0.1) setInput({ ...input, amount: 0.1 });
+      else setInput({ ...input, amount: e.target.value });
+    }
+  }
+
+  useEffect(() => {
+    loadScript({
+      "client-id":
+        "AQgGERFg6OC0TqpyaxQUQjnv3p1OoARtsCgCpUiuY-o9YWE8fznjgEVyPm3C1zme3LqEvJhG4ilTN_sU",
+    }).then((res) => {
+      res
+        .Buttons({
+          createOrder: (data, actions) => {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  description: "purchase",
+                  amount: { currency_code: "USD", value: input.amount },
+                },
+              ],
+            });
+          },
+          onApprove: async (data, actions) => {
+            const order = await actions.order.capture();
+          },
+        })
+        .render(paypal.current);
+    });
+  }, []);
+
   return (
-    <div className={styles.main_container}>
-      <div className={styles.inner_container}>
-        {navs.map(({ title, route, icon, id }) => {
-          return <Nav route={route} icon={icon} key={id} title={title} />;
-        })}
-        <div className={styles.nav_container}>
-          <div>
-            <a
-              href="https://payl8r.com/retailers/payment-detail?retailer=cleonoral9282ykfxuv9"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <PaymentIcon />
-              </div>
-              <p>Pay Here</p>
-            </a>
+    <div className={styles.large_container}>
+      <div className={styles.main_container}>
+        <div className={styles.inner_container}>
+          {navs.map(({ title, route, icon, id }) => {
+            return <Nav route={route} icon={icon} key={id} title={title} />;
+          })}
+          <div className={styles.nav_container}>
+            <div>
+              <a
+                href="https://payl8r.com/retailers/payment-detail?retailer=cleonoral9282ykfxuv9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div>
+                  <PaymentIcon />
+                </div>
+                <p>Pay Here</p>
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+      <div className={styles.paypal_container}>
+        <label>
+          Amount
+          <input
+            onChange={handleChange}
+            type="number"
+            name="amount"
+            value={input.amount}
+            placeholder="Enter amount"
+            className={styles.amount}
+          />
+        </label>
+        <div ref={paypal}></div>
       </div>
     </div>
   );
@@ -73,13 +128,13 @@ function Nav({ icon, route, title }) {
   function inside(e, route) {
     e.preventDefault();
     if (route === "/courses") {
-      e.target.firstChild.firstChild.setAttribute("fill", "#9a8a6f");
+      e.target.firstChild.firstChild?.setAttribute("fill", "#9a8a6f");
     }
   }
   function outside(e, route) {
     e.preventDefault();
     if (route === "/courses") {
-      e.target.firstChild.firstChild.setAttribute("fill", "#efcb71");
+      e.target.firstChild.firstChild?.setAttribute("fill", "#efcb71");
     }
   }
 
