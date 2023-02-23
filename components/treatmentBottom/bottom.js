@@ -13,7 +13,7 @@ export default function Bottom() {
           src="Appointment.png"
           alt="no image here"
         />
-        { /* <pre>
+        {/* <pre>
           Welcome Queen! Thank you for choosing CleoNora London. A 35% deposit
           is required to secure all appointments. Reschedule or Cancel within 48
           hours. Thank You! See you soon! Have an amazing day.
@@ -24,7 +24,7 @@ export default function Bottom() {
           alt="no image here"
         />
       </div>
-      <div className={styles.right_container}>
+      {/* <div className={styles.right_container}>
         <a
           href="https://booking.setmore.com/scheduleappointment/02ea650f27b881b9ac1a83e27b6bb8bd840d9861?source=qrcode"
           target="_blank"
@@ -32,7 +32,7 @@ export default function Bottom() {
         >
           <img src="qrcode.png" alt="no image here" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

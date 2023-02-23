@@ -88,7 +88,7 @@ export default function Navigation() {
           {navs.map(({ title, route, icon, id }) => {
             return <Nav route={route} icon={icon} key={id} title={title} />;
           })}
-          <div className={styles.nav_container}>
+          {/* <div className={styles.nav_container}>
             <div>
               <a
                 href="https://payl8r.com/retailers/payment-detail?retailer=cleonoral9282ykfxuv9"
@@ -101,7 +101,7 @@ export default function Navigation() {
                 <p>Payl8r</p>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.paypal_container}>

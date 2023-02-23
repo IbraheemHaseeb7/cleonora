@@ -55,7 +55,7 @@
   width: 90%;
   height: 90%;
   display: grid;
-  grid-template-columns: repeat(7, 14.28%);
+  grid-template-columns: repeat(6, auto);
   grid-auto-rows: 100%;
   background-color: #525252;
   overflow: hidden;
