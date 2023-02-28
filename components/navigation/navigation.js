@@ -46,17 +46,26 @@ const navs = [
 ];
 
 export default function Navigation() {
-  const [input, setInput] = useState({ amount: 0.1, button: null });
+  const [input, setInput] = useState({
+    amount: "",
+    button: null,
+    clicked: false,
+  });
   const paypal = useRef();
 
   function handleChange(e) {
     if (e.target.name === "amount") {
-      if (e.target.value < 0.1) setInput({ ...input, amount: 0.1 });
-      else setInput({ ...input, amount: e.target.value });
+      setInput({
+        ...input,
+        amount: e.target.value,
+        clicked: false,
+      });
     }
   }
 
-  useEffect(() => {
+  function renderButton(e) {
+    e.preventDefault();
+    setInput({ ...input, clicked: true });
     loadScript({
       "client-id":
         "AQgGERFg6OC0TqpyaxQUQjnv3p1OoARtsCgCpUiuY-o9YWE8fznjgEVyPm3C1zme3LqEvJhG4ilTN_sU",
@@ -68,7 +77,7 @@ export default function Navigation() {
               purchase_units: [
                 {
                   description: "purchase",
-                  amount: { currency_code: "USD", value: input.amount },
+                  amount: { currency_code: "USD", value: +input.amount },
                 },
               ],
             });
@@ -79,7 +88,7 @@ export default function Navigation() {
         })
         .render(paypal.current);
     });
-  }, []);
+  }
 
   return (
     <div className={styles.large_container}>
@@ -114,9 +123,13 @@ export default function Navigation() {
             value={input.amount}
             placeholder="Enter amount"
             className={styles.amount}
+            disabled={input.clicked}
           />
         </label>
-        <div ref={paypal}></div>
+        <button disabled={input.clicked} className="btn" onClick={renderButton}>
+          Pay
+        </button>
+        <div style={{ margin: "2rem" }} ref={paypal}></div>
       </div>
     </div>
   );

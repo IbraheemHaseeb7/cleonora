@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import Whatsapp from "../components/whatsapp/whatsapp";
 import Toaster from "react-hot-toast";
 import Navigation from "../components/navigation/navigation";
+import Head from "next/head";
 
 export const NavContext = React.createContext({
   open: false,
@@ -19,6 +20,9 @@ function MyApp({ Component, pageProps }) {
     <NavContext.Provider value={{ open: open, setOpen: setOpen }}>
       {/* <Toaster /> */}
       <Navbar />
+      <Head>
+        <title>Cleonora London</title>
+      </Head>
       <Sidebar open={open} setOpen={setOpen} />
       {open && <div className="blur" onClick={() => setOpen(!open)}></div>}
       <Component {...pageProps} />

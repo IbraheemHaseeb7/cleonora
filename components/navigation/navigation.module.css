@@ -9,8 +9,9 @@
 .paypal_container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-items: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .paypal_container > label {
@@ -35,6 +36,11 @@
   outline: none;
   width: 100%;
   position: relative;
+}
+
+.amount:disabled {
+  border: 2px solid #efcb713f;
+  color: #efcb713f;
 }
 
 .paypal_container > div {

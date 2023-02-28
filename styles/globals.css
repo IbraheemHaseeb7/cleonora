@@ -38,6 +38,13 @@ a {
   color: #efcb71;
 }
 
+.btn:disabled {
+  color: #efcb713f;
+  border: 2px solid #efcb713f;
+  user-select: none;
+  pointer-events: none;
+}
+
 .btn::before {
   content: "";
   width: 150%;
