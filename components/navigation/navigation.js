@@ -77,7 +77,7 @@ export default function Navigation() {
               purchase_units: [
                 {
                   description: "purchase",
-                  amount: { currency_code: "USD", value: +input.amount },
+                  amount: { currency_code: "GBP", value: +input.amount },
                 },
               ],
             });
