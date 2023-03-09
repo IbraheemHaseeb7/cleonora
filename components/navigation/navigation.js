@@ -69,6 +69,7 @@ export default function Navigation() {
     loadScript({
       "client-id":
         "AQgGERFg6OC0TqpyaxQUQjnv3p1OoARtsCgCpUiuY-o9YWE8fznjgEVyPm3C1zme3LqEvJhG4ilTN_sU",
+      "currency":"GBP",
     }).then((res) => {
       res
         .Buttons({
